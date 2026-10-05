@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link Profile Qroom</title>
+    <!-- Tambahan Link untuk Icon FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         /* Animasi Latar Belakang Bergerak */
         @keyframes gradientBG {
@@ -76,7 +79,9 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
         }
         .link-btn {
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             padding: 16px;
             margin-bottom: 15px;
@@ -98,6 +103,12 @@
             border: 1px solid rgba(255, 255, 255, 0.8);
         }
         
+        /* CSS tambahan untuk jarak ikon */
+        .link-btn i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
         /* Delay animasi tiap tombol agar muncul bergantian */
         .wa-btn { background-color: #25D366; animation-delay: 0.3s; }
         .ig-btn { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); animation-delay: 0.5s; }
@@ -113,11 +124,18 @@
     
     <div class="desc">Sewa apartemen harian murah by Qroom, untuk info lebih lanjut bisa hubungi kami di bawah ini.</div>
     
-    <a href="https://Wa.me/6285199200152" class="link-btn wa-btn" target="_blank">WhatsApp</a>
+    <!-- Ikon ditambahkan menggunakan tag <i> di dalam tombol -->
+    <a href="https://Wa.me/6285199200152" class="link-btn wa-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
     
-    <a href="https://www.instagram.com/qroom_real" class="link-btn ig-btn" target="_blank">Instagram</a>
+    <a href="https://www.instagram.com/qroom_real" class="link-btn ig-btn" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
     
-    <a href="https://tiktok.com/" class="link-btn tt-btn" target="_blank">TikTok</a>
+    <a href="https://tiktok.com/" class="link-btn tt-btn" target="_blank">
+        <i class="fab fa-tiktok"></i> TikTok
+    </a>
 </div>
 
 </body>
